@@ -5,15 +5,9 @@ def create_photo():
     write_photo_config(photo)
     photo.write(write_photo_content())
 
-    return photo 
-
 
 def write_photo_config(photo): 
-  photo.write("P2\n")
-  photo.write("100 100\n")
-  photo.write("15\n")
-
-  return photo
+  photo.write("P2\n100 100\n15\n")
 
 
 def write_photo_content():

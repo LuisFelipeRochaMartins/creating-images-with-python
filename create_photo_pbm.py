@@ -8,8 +8,7 @@ def create_photo():
     return photo
 
 def write_photo_config(photo):
-  photo.write("P1\n")
-  photo.write("100 100\n")
+  photo.write("P1\n100 100\n")
 
 
 def write_photo_content() :
