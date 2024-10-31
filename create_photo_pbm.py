@@ -11,7 +11,7 @@ def write_photo_config(photo):
   photo.write("P1\n100 100\n")
 
 
-def write_photo_content() :
+def write_photo_content() -> str:
   bytes = ""
   for _ in range(10): 
     bits = " ".join(" ".join(str(randint(0,1)) * 10 for _ in range(10)))

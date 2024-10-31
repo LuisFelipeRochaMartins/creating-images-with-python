@@ -9,7 +9,7 @@ def photo_header(photo, intensity):
     photo.write(f"P3\n100 100\n {intensity}\n")
 
 
-def photo_content(intensity, scale): 
+def photo_content(intensity, scale) -> str: 
   bytes = ""
   for _ in range(100):
     bytes += " ".join(str(randint(0,intensity)) for _ in range(100 * 3 * scale))
